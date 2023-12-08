@@ -1,38 +1,506 @@
-.App {
-  text-align: center;
+body{
+  background-color:#595456;
+}
+.content{
+  background-color:#e8e3de;
+  /* display:flex; */
+  margin:20px;
+  padding:10px;
+  height:100vh;
+
+}
+nav{
+  display:flex;
+}
+.left-cont{
+  display:flex;
+  flex:65%;
+  color:#45242d;
+  /* background-color:red; */
+  font-family: 'Jost', sans-serif;
+  /* font-family: 'Manrope', sans-serif; */
+  padding:20px;
+  height:50px;
+}
+.left-cont h1{
+  font-weight:300px;
+  font-size:20px;
+} 
+.sparkle{
+  position:relative;
+  width:10px;
+  height:10px;
+  top:19px;
+  right:47px;
+  
+}
+ul{
+  list-style-type:none;
+  display:flex;
+  margin-left:168px;
+  margin-top:-8px;
+}
+li{
+margin:20px;
+}
+.butto{
+  flex:24%;
+}
+.butto button{
+  background-color:white;
+  border:none;
+  border-radius:15px;
+  width:96%;
+  height:85px;
+  padding:20px;
+  margin:5px;
+  font-weight:900;
+  /* flex:30%; */
+  /* float:right; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+
+.header{
+  display:flex;
+  height:70%;
+  /* background-color:red; */
+  
+}
+.hiring{
+  background-color:#d2c2bc;
+  flex:65%;
+  padding:20px;
+  border-radius:20px;
+  height:91%;
+  margin:5px;
+  overflow:hidden;
+
+ 
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.curve-line{
+  width:500px;
+  height:400px;
+  /* background-color:blue; */
+  border-radius:50%;
+  border:1px solid white;
+  border-color:transparent transparent transparent #b48c97;
+  position:relative;
+  bottom:920px;
+  left:770px;
+  transform:rotate(-25deg)
+}
+.circle{
+  width:60px;
+  height:60px;
+  border:2px solid white;
+  border-radius:50%;
+  position:absolute;
+  top:482px;
+  left:700px;
+}
+.sqr{
+  width:20px;
+  height:20px;
+  border:2px solid white;
+  transform:rotate(45deg);
+  position:absolute;
+  top:235px;
+  left:638px;
+
+}
+.half-circle {
+  width: 108px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 0px 0px 500px 500px;
+  transform: rotate(35deg);
+  position: absolute;
+  top: 270px;
+  left: 225px;
+}
+.small{
+  width:20px;
+  height:20px;
+  border:2px solid white;
+  border-radius:50px;
+  position:absolute;
+  top:510px;
+  left:245px;
+}
+.zigzag{
+  width:70px;
+  transform:rotate(30deg);
+  position:absolute;
+  top:560px;
+  left:180px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.curve {
+  width: 300px; 
+  height: 500px;  
+  border: solid 1px #000;
+  border-color:transparent #b48c97 transparent transparent;
+  border-radius: 50%/ 0px 400px 400px 0;
+  position:relative;
+  bottom:1080px;
+  left:-281px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hiring button{
+  padding:10px;
+  background-color:#45242d;
+  border-radius:10px;
+  border:none;
+  color:white;
+}
+.apple{
+  width:15px;
+  padding-right:5px;
+}
+.paragraf{
+  text-align:center;
+  margin-top:-45px;
+  /* width:800px; */
+  /* background-color:red; */
+
+}
+/* .p-top{ */
+  /* padding-top:205px; */
+  /* background-color:red; */
+/* } */
+.p-mid{
+  /* position:relative; */
+
+  padding-top:100px;
+}
+.p-bot{
+  margin-top:100px;
+}
+spam{
+  /* color:red; */
+  /* margin:1094px; */
+  margin-top:-150px;
+}
+.hiring p{
+  font-family: 'Jost', sans-serif;
+  font-size:110px;
+  color:#45242d;
+  margin:15px;
+}
+.man{
+  width:300px;
+  border-radius:0px 0px 500px 500px;
+  position:relative;
+  bottom:167px;
+  left:03px;
+  transform:rotate(25deg);
+  /* background-color:red; */
+  /* z-index:-1; */
+}
+.photo{
+  position:relative;
+  left:320px;
+  top:20px;
+  background-color:#c2f52f;
+  /* z-index:-1; */
+  width:300px;
+  height:150px;
+  /* overflow:; */
+  transform:rotate(-25deg);
+  border-radius:00px 00px 500px 500px;
+}
+.star{
+  width:30px;
+  /* background-color:red; */
+  float:right;
+  position:absolute;
+  transform:rotate(25deg);
+  right:10px;
+  top:5px;
+
+
+}
+.p-bott{
+  /* color:blue; */
+  z-index:1;
+  position:relative;
+  bottom:100px;
+  top:-80px;
+
+}
+.start-button{
+  width:87px;
+  position:relative;
+  bottom:218px;
+  right:76px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.boxes{
+  flex:25%;
+}
+.dot{
+
+
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+.mobile{
+  background-color:#d2ade7;
+  height:60%;
+  border-radius:20px;
+  padding:20px;
+  margin:5px;
+  overflow:hidden;
+  font-family: 'Jost', sans-serif;
+  color:#45242d;
+  text-align:center;
+  
+}
+.mobile-free{
+  /* width:50px; */
+  position:absolute;
+  background-color:#275df0;
+  display:inline;
+  padding:5px 15px;
+  color:white;
+  border-radius:10px;
+  bottom:520px;
+  left:1175px;
+  z-index:1;
+  transform:rotate(-10deg)
+}
+.sun{
+  width:150px;
+  height:200px;
+  margin-top:50px;
+}
+.mobile-phone{
+  width:150px;
+  position:relative;
+  bottom:240px;
+
+  /* text-align:center;
+  align-items:center; */
+}
+.heading-mobile{
+  display:flex;
+}
+
+
+
+
+
+
+
+.mobile-content{
+  background-color:white;
+  width:120px;
+  position:relative;
+  padding:10px;
+  border-radius:10px;
+  top:-535px;
+  left:86px;
+  font-size:7px;
+  font-family:sans-serif;
+
+}
+.mobile-content img{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+}
+.mobile-top{
+  display:flex;
+
+}
+.longButt{
+  border-radius:20px;
+  /* border:none; */
+  /* height:35px; */
+  /* width:250px; */
+  background-color:#eae8e8;
+  /* padding:5px; */
+  width:80px;
+  margin:10px 0px 5px 15px;
+  
+
+}
+.logbutt{
+  /* height:18px; */
+  /* width:100px; */
+  padding:5px;
+  padding-left:10px;
+  padding-right:5px;
+  /* margin-top:2px; */
+}
+.logbutt spam{
+  border:2px solid white;
+  background-color:black;
+  border-radius:20px;
+  margin-left:10px;
+  /* padding-right:50px; */
+
+}
+.mlogo{ 
+  /* margin-top:20px; */
+}
+.categarise{
+  display:flex;
+}
+.colorBox{
+  display:flex;
+  
+}
+.colorBox>div{
+  margin:3px;
+  border-radius:8px;
+  height:35px;
+  width:100px;
+  padding:5px;
+}
+.colorBox hr{
+  margin-top:-9px;
+}
+.colorBox h4{
+  font-size:10px;
+  font-weight:900;
+  margin-top:5px;
+}
+.colorBox p {
+  margin-top:-1px;
+}
+.blue{
+  background-color:#dde0f6;
+}
+.green{
+  background-color:#d9ebde;
+}
+.orange{
+  background-color:#f3ead4;
+}
+.populer{
+  display:flex;
+}
+.first, .second{
+  display:flex;
+}
+.mobFooter{
+  display:flex;
+}
+
+.mobImage{
+  margin-left:30px;
+}
+
+
+
+
+
+
+
+
+.trust{
+  background-color:#45242d;
+  height:22%;
+  border-radius:20px;
+  padding:20px;
+  margin:5px;
+}
+.trust-top{
+  display:flex;
+}
+.trust-top p{
+  margin:0px;
+  display:block;
+
+}
+.up-arrow{
+  width:15px;
+  height:15px;
+  margin-left:150px;
+}
+
+.trust-top p{
+  color:white;
+  font-size:20px;
+}
+.trust-bott{
+  display:flex;
+}
+.trust-bott button{
+  padding:0px;
+  /* width:10px;  */
+  height:25px;
+  padding:3px 10px 3px 10px;
+  border-radius:7px;
+  border:none;
+  background-color:white;
+  font-weight:bold;
+  margin-top:15px;
+}
+.four {
+ margin-left:80px;
+ position:relative;
+ bottom:85px;
+ left:40px;
+ /* background-color:red; */
+ padding:0px;
+}
+.four p{
+  color:white;
+  font-size:60px;
+  
+}
+.sparker-green{
+  width:20px;
+}
+
+
+
+
+
+
+
+.foot{
+  display:flex;
+}
+.about{
+  background-color:red;
+  width:200px;
+  display:flex;
+
+}
+.about p{
+  font-size:30px;
+}
+.qr{
+  width:70px;
+  height:70px;
 }
